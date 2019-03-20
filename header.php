@@ -58,12 +58,13 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-          <li class="nav-item nav-menu"><a class="nav-link" href="home.php">ホーム <span class="sr-only">(current)</span></a></li>
-          <li class="nav-item nav-menu"><a class="nav-link" href="stage.php">公演情報</a></li>
-          <li class="nav-item nav-menu"><a class="nav-link" href="member.php">社員紹介</a></li>
-          <li class="nav-item nav-menu"><a class="nav-link" href="blog.php">ブログ</a></li>
-          <li class="nav-item nav-menu"><a class="nav-link" href="contact.php">お問い合わせ</a></li>
+        <?php
+            wp_nav_menu(array(
+            'menu' => 'mainnavi',
+            'container' => false,
+            'menu_class' => 'nav navbar-nav'
+            ));
+        ?>
           <li class="nav-item nav-menu"><a class="nav-link" href="https://twitter.com/penguin_sora"><i class="fab fa-twitter-square"></i></a></li>
           <li class="nav-item nav-menu"><a class="nav-link" href="https://ja-jp.facebook.com/%E7%A9%BA%E9%A3%9B%E3%81%B6%E3%83%9A%E3%83%B3%E3%82%AE%E3%83%B3%E3%82%AB%E3%83%B3%E3%83%91%E3%83%8B%E3%83%BC-1433144510231399/"><i class="fab fa-facebook-square"></i></a></li>
         </ul>
